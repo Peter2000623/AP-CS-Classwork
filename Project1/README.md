@@ -5,7 +5,6 @@
 * APCS
 * Instructor: Mr.Daniel
 
-
-Description: I want to create a program to allow users to encrypt or decipher message with a key.
+* Description: I want to create a program to allow users to encrypt or decipher message with a key.
 
 
