@@ -1,11 +1,8 @@
 # Project 1
 
 Peter Song
-
 12/27/2017
-
 APCS
-
 Instructor: Mr.Daniel
 
 
