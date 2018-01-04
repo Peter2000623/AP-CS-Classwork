@@ -28,3 +28,57 @@ A *compiler* converts source code into machine-readable form called *bytecode*.
 ## Types and Identifiers
 ### Identifiers
 An *identifier* is a name for a variable, parameter, constant, user-defined method, or user- defined class.
+Identifiers may not begin with a digit.
+
+### Built-in Types
+Every identifier in a Java program has a type associated with it. The primitive or built- in types that are included in the AP Java subset are
+*int* *boolean* *double*
+One type can be cast to another compatible type if appropriate. For example,
+```Java
+int total, n; double average;
+...
+average = (double) total/n;
+```
+Alternatively,
+```Java
+average = total/(double) n;
+```
+Assigning an int to a double automatically casts the int to double. For example,
+```Java
+int num = 5;
+double realNum = num; //num is cast to double
+```
+### Storage of Numbers
+#### Integer
+Byte: 8 bits, 1 for sign
+Store −2n−1 to 2n−1 − 1. (Note that the extra value on the nega- tive side comes from not having to store −0.)
+#### Floating-Point Numbers
+A floating-point number is stored in two parts: a mantissa, which specifies the digits of the number, and an exponent.
+* sign ∗ mantissa ∗ 2^exponent
+In type double eleven bits are allocated for the exponent, and (typically) 52 bits for the mantissa. One bit is allocated for the sign.
+When floating-point numbers are converted to binary, most cannot be represented exactly, leading to round-off error.
+* http://blog.csdn.net/abing37/article/details/5332798
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
