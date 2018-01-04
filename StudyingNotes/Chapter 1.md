@@ -36,7 +36,6 @@ Every identifier in a Java program has a type associated with it. The primitive 
 One type can be cast to another compatible type if appropriate. For example,
 ```Java
 int total, n; double average;
-...
 average = (double) total/n;
 ```
 Alternatively,
@@ -57,9 +56,30 @@ A floating-point number is stored in two parts: a mantissa, which specifies the 
 * sign ∗ mantissa ∗ 2^exponent
 In type double eleven bits are allocated for the exponent, and (typically) 52 bits for the mantissa. One bit is allocated for the sign.
 When floating-point numbers are converted to binary, most cannot be represented exactly, leading to round-off error.
-* http://blog.csdn.net/abing37/article/details/5332798
+Check:  http://blog.csdn.net/abing37/article/details/5332798
 
-
+### Final Variables
+A final variable or user-defined constant, identified by the keyword final, is used to name a quantity whose value will not change.
+```Java
+final double TAX_RATE = 0.08;
+final int CLASS_SIZE = 35;
+```
+Note:
+1. Constantidentifiersare,byconvention,capitalized.
+2. A final variable can be declared without initializing it immediately. For ex-
+ample,
+```Java
+final double TAX_RATE; if (< some condition >)
+TAX_RATE = 0.08; else
+TAX_RATE = 0.0;
+// TAX_RATE can be given a value just once: its value is final!
+```
+3. Acommonuseforaconstantisasanarraybound.Forexample,
+```Java
+final int MAXSTUDENTS = 25;
+int[] classList = new int[MAXSTUDENTS];
+```
+4. Usingconstantsmakesiteasiertorevisecode.Justasinglechangeinthefinal declaration need be made, rather than having to change every occurrence of a value.
 
 
 
