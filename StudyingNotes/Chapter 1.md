@@ -65,7 +65,7 @@ final double TAX_RATE = 0.08;
 final int CLASS_SIZE = 35;
 ```
 Note:
-1. Constantidentifiersare,byconvention,capitalized.
+1. Constant identifiers are,by convention,capitalized.
 2. A final variable can be declared without initializing it immediately. For ex-
 ample,
 ```Java
@@ -74,12 +74,53 @@ TAX_RATE = 0.08; else
 TAX_RATE = 0.0;
 // TAX_RATE can be given a value just once: its value is final!
 ```
-3. Acommonuseforaconstantisasanarraybound.Forexample,
+3. A common use for a constant is as an array bound.For example,
 ```Java
 final int MAXSTUDENTS = 25;
 int[] classList = new int[MAXSTUDENTS];
 ```
-4. Usingconstantsmakesiteasiertorevisecode.Justasinglechangeinthefinal declaration need be made, rather than having to change every occurrence of a value.
+4. Using constants makes it easier to revise code.Just a single change in the final declaration need be made, rather than having to change every occurrence of a value.
+
+## Operators
+### Arithmetic Operators:
++, -, *, /, %
+### Relational Operators:
+==, !=, >, <, <=, >=
+### Logical Operators:
+!, &&, || (&& comes first)
+### Assignement Operators:
+=, +=, -=, *=, /=, %=
+### Increment and Decrement Operators:
+++, --
+### Operator Precedence
+(1) !, ++, --
+(2) *,/,%
+(3) +,-
+(4) <,>,<=,>=
+(5) ==, !=
+(6) &&
+(7) ||
+(8) =, +=, -=, *=, /=, %=
+
+## Input/Output
+### Escape Sequenes
+\n new line
+\" double quote
+\\ backlash
+
+## Structures
+1) if statement
+2) for loop
+3) while loop
+4) nested loop
+
+## Errors
+ArithmeticException: divided by zero
+NullPointerException: An attempt to invoke an instance method with a null reference may cause your program to terminate with a NullPointerException.
+ClassCastException: problem with class
+ArrayIndexOutOfBoundsException: out of bound for array
+IndexOutOfBoundsException: out of bound for list
+IllegalArgumentException: does not satisfy the method's precondition
 
 
 
