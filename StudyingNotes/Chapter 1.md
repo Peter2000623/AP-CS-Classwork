@@ -93,14 +93,14 @@ int[] classList = new int[MAXSTUDENTS];
 ### Increment and Decrement Operators:
 ++, --
 ### Operator Precedence
-(1) !, ++, --
-(2) *,/,%
-(3) +,-
-(4) <,>,<=,>=
-(5) ==, !=
-(6) &&
-(7) ||
-(8) =, +=, -=, *=, /=, %=
+1) !, ++, --
+2) *,/,%
+3) +,-
+4) <,>,<=,>=
+5) ==, !=
+6) &&
+7) ||
+8) =, +=, -=, *=, /=, %=
 
 ## Input/Output
 ### Escape Sequenes
@@ -115,12 +115,12 @@ int[] classList = new int[MAXSTUDENTS];
 4) nested loop
 
 ## Errors
-ArithmeticException: divided by zero
-NullPointerException: An attempt to invoke an instance method with a null reference may cause your program to terminate with a NullPointerException.
-ClassCastException: problem with class
-ArrayIndexOutOfBoundsException: out of bound for array
-IndexOutOfBoundsException: out of bound for list
-IllegalArgumentException: does not satisfy the method's precondition
+* ArithmeticException: divided by zero
+* NullPointerException: An attempt to invoke an instance method with a null reference may cause your program to terminate with a NullPointerException.
+* ClassCastException: problem with class
+* ArrayIndexOutOfBoundsException: out of bound for array
+* IndexOutOfBoundsException: out of bound for list
+* IllegalArgumentException: does not satisfy the method's precondition
 
 
 
