@@ -73,7 +73,7 @@ The keyword public preceding the class declaration signals that the class is usa
  ## Methods
  ### Headers
  
-![Headers](/Users/appa/Desktop/GitHub/AP-CS-Classwork/StudyingNotes/Method_Headers.png)
+![Headers](Method_Headers.png)
 
 
 
