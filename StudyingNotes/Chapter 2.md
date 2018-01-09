@@ -162,7 +162,7 @@ final double FEE = 5.00;
 BankAccount andysAccount = new BankAccount("AndyS", 7.00); chargeFee(andysAccount, "AndyS", FEE);
 ... }
 ```
-![](Parameter.png)
+![](Images/Parameter.png)
 
 
 
