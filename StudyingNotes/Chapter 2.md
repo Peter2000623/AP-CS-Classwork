@@ -110,14 +110,59 @@ Main: static since it's unique and it's not related to the instances.
 We can call main function in another main function.
 
 ### Method Overloading
+Overloaded methods are two or more methods in the same class that have the same name but different parameter lists.
 
+## Scope
+* The scope of a variable or method is the region in which that variable or method is visible and can be accessed.
+* A local variable is defined inside a method.
+* A block is a piece of code enclosed in a {} pair.
 
+### The *this* Keyword
+An instance method is always called for a particular object. This object is an implicit parameter for the method and is referred to with the keyword this.
 
+## References
+### References vs. Primitive Data Types
+primitive value: passed as value
+reference value: passed as address
 
+### Method Parameters
+#### Formal vs. Actual Parameters
+The header of a method defines the parameters of that method.
+* *Formal Parameters* exits as the headers.
+* *Actual Parameters* are the actual data.
 
+#### Passing Primitive Types as Parameters
+Any changes made to the parameters will not affect the values of the arguments in the calling program.
+```Java
+public class ParamTest {
+public static void foo(int x, double y) {
+x = 3;
+y = 2.5; }
+public static void main(String[] args) {
+int a = 7;
+double b = 6.5;
+foo(a, b);
+System.out.println(a + " " + b);
+} }
+```
+The output will be 7 6.5
 
-
-
+#### Passing Obejects as Parameters
+It is, however, possible to change the state of the object to which the parameter refers through methods that act on the object.
+```Java
+A method that changes the state of an object.
+/** Subtracts fee from balance in b if current balance too low. */ public static void chargeFee(BankAccount b, String password,
+double fee)
+{
+final double MIN_BALANCE = 10.00; if (b.getBalance() < MIN_BALANCE)
+b.withdraw(password, fee);
+}
+public static void main(String[] args) {
+final double FEE = 5.00;
+BankAccount andysAccount = new BankAccount("AndyS", 7.00); chargeFee(andysAccount, "AndyS", FEE);
+... }
+```
+![](Parameter.png)
 
 
 
