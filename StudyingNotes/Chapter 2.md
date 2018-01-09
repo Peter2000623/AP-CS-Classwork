@@ -72,8 +72,46 @@ The keyword public preceding the class declaration signals that the class is usa
  
  ## Methods
  ### Headers
- 
-![Headers](Method_Headers.png)
+![](Method_Headers.png)
+
+### Constructors
+A constructor creates an object of the class.
+```Java
+/** Default constructor.
+* Constructs a bank account with default values. */
+public BankAccount() {
+password = "";
+balance = 0.0;
+}
+```
+### Accessors
+An accessor method accesses a class object without altering the object.
+```Java
+/** @return the balance of this account */
+public double getBalance()
+{ return balance; }
+```
+### Mutators
+A mutator method changes the state of an object by modifying at least one of its in- stance variables.
+```Java
+public void deposit(String acctPassword, double amount) {
+if (!acctPassword.equals(password)) /* throw an exception */
+else
+balance += amount;
+}
+```
+### Static Methods
+* Static Methods vs. Instance Methods
+A method operate on individual objects of a class is called *instance methods*.
+A method that performs an operation for the entire class, not its individual objects, is called a *static method* (sometimes called a class method).
+
+* Static Methods in a Driver Class
+Main: static since it's unique and it's not related to the instances.
+We can call main function in another main function.
+
+### Method Overloading
+
+
 
 
 
