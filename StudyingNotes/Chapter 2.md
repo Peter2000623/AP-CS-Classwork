@@ -72,7 +72,7 @@ The keyword public preceding the class declaration signals that the class is usa
  
  ## Methods
  ### Headers
-![](Method_Headers.png)
+![](Images/Method_Headers.png)
 
 ### Constructors
 A constructor creates an object of the class.
