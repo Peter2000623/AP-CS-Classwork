@@ -27,6 +27,10 @@ public class Bicycle {
 		}		
 	}
 	
+	public void checkDistance() {
+		System.out.println("Distance: "+distance);
+	}
+	
 	public void clean() {
 		
 	 if(damage<3) {
@@ -102,11 +106,13 @@ public class Bicycle {
     		a.carryPerson();
     		a.carryThings();
     		a.getNumberofSeat();
+    		a.run(200);
     		a.seedamage();
     		a.clean();
     		a.repair();
     		a.repair();
-    		System.out.println("Damage: "+a.seedamage());		      
+    		System.out.println("Damage: "+a.seedamage());		
+    		a.checkDistance();
     }  
 	
 }
