@@ -1,3 +1,10 @@
+/*
+ * @author Peter Song
+ * @section S3C7 APCS
+ * @instructor Mr.Daniel
+ * @date 3/6/2018
+ * @description This programs establishes the superclass Item.
+ */
 import java.util.Date;
 
 public class Item {

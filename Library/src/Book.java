@@ -1,3 +1,9 @@
+/*
+ * @author Peter Song
+ * @section S3C7 APCS
+ * @instructor Mr.Daniel
+ * @date 3/6/2018
+ * @description This program sets up the Book class.
 import java.util.Date;
 
 public class Book extends Item{
