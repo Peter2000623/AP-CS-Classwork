@@ -1,3 +1,9 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 /*
  * Peter Song
  * Mr. Daniel
@@ -5,7 +11,7 @@
  * 3/13/2018
  * This program creates a triangle class. 
  */
-public class Triangle extends Shape{
+public class Triangle extends Shape implements Comparable{
 		private double a;
 		private double b;
 		private double c;
@@ -42,6 +48,18 @@ public class Triangle extends Shape{
 			System.out.println(a.getPerimeter());
 			System.out.println(a.equals(b));
 			System.out.println(a.toString());
+			List abc = new ArrayList<Integer>();
+			abc.add(1);
+			abc.add(2);
+			int[] ab = {2,4,5,6};
+			Arrays.sort(ab);
+			Collections.sort(abc);//Collections 可以帮忙sort，在util包里，sort object arraylist。 Arrays帮忙sort primative Arraylist。
+			
+		}
+		@Override
+		public int compareTo(Object o) {
+			// TODO Auto-generated method stub
+			return 0;
 		}
 		
 }
